@@ -13,6 +13,24 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>xml;json;txt;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\Sensors">
+      <UniqueIdentifier>{06f5169c-5cf6-4df5-ae4f-e977458309ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Sensors">
+      <UniqueIdentifier>{8ba0e5d7-64eb-4187-99e0-0b01acfbc9ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SerialConnection">
+      <UniqueIdentifier>{ec89abe4-bf79-42a3-9461-61202d8f55df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SerialConnection">
+      <UniqueIdentifier>{9af1e65c-5ed9-4002-9cc9-0d265b79854d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Logic">
+      <UniqueIdentifier>{92c362f1-7bc5-445f-9006-405320c59eb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Logic">
+      <UniqueIdentifier>{d7893168-b870-4a34-9de2-f20338ecb48b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="AIEProject.ino" />
@@ -24,5 +42,43 @@
     <ClInclude Include="__vm\.AIEProject.vsarduino.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="CurrentSensor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TemperatureSensor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VoltageSensor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Gyroscope.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SerialConnection.h">
+      <Filter>Header Files\SerialConnection</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreService.h">
+      <Filter>Header Files\Logic</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CurrentSensor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TemperatureSensor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VoltageSensor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Gyroscope.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SerialConnection.cpp">
+      <Filter>Source Files\SerialConnection</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreService.cpp">
+      <Filter>Source Files\Logic</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
