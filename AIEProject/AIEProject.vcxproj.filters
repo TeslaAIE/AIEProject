@@ -60,6 +60,12 @@
     <ClInclude Include="CoreService.h">
       <Filter>Header Files\Logic</Filter>
     </ClInclude>
+    <ClInclude Include="PINs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ICurrentSensor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CurrentSensor.cpp">
