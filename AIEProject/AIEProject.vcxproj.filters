@@ -31,6 +31,15 @@
     <Filter Include="Source Files\Logic">
       <UniqueIdentifier>{d7893168-b870-4a34-9de2-f20338ecb48b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Config">
+      <UniqueIdentifier>{a4cfcc76-587d-44e6-9c03-288e48d66db3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\DataStructures">
+      <UniqueIdentifier>{53c4da72-f957-44ff-8918-b7e4e34b04f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\STL">
+      <UniqueIdentifier>{3e8bd92c-0fd8-4b97-bc29-f9a16a96979d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="AIEProject.ino" />
@@ -42,49 +51,190 @@
     <ClInclude Include="__vm\.AIEProject.vsarduino.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CurrentSensor.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="TemperatureSensor.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="VoltageSensor.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Gyroscope.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="SerialConnection.h">
       <Filter>Header Files\SerialConnection</Filter>
     </ClInclude>
     <ClInclude Include="CoreService.h">
       <Filter>Header Files\Logic</Filter>
     </ClInclude>
-    <ClInclude Include="PINs.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="CurrentSensor.h">
+      <Filter>Header Files\Sensors</Filter>
+    </ClInclude>
+    <ClInclude Include="Gyroscope.h">
+      <Filter>Header Files\Sensors</Filter>
     </ClInclude>
     <ClInclude Include="ICurrentSensor.h">
+      <Filter>Header Files\Sensors</Filter>
+    </ClInclude>
+    <ClInclude Include="IVoltageSensor.h">
+      <Filter>Header Files\Sensors</Filter>
+    </ClInclude>
+    <ClInclude Include="TemperatureSensor.h">
+      <Filter>Header Files\Sensors</Filter>
+    </ClInclude>
+    <ClInclude Include="VoltageSensor.h">
+      <Filter>Header Files\Sensors</Filter>
+    </ClInclude>
+    <ClInclude Include="Config.h">
+      <Filter>Header Files\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="PINS.h">
+      <Filter>Header Files\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="Cell.h">
+      <Filter>Header Files\DataStructures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Users\Mateusz Matejko\Downloads\avr-stl-1.1.1\avr-stl\include\avr_config.h">
+      <Filter>Header Files\STL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Users\Mateusz Matejko\Downloads\avr-stl-1.1.1\avr-stl\include\char_traits.h">
+      <Filter>Header Files\STL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Users\Mateusz Matejko\Downloads\avr-stl-1.1.1\avr-stl\include\concept_checks.h">
+      <Filter>Header Files\STL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Users\Mateusz Matejko\Downloads\avr-stl-1.1.1\avr-stl\include\container_concepts.h">
+      <Filter>Header Files\STL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Users\Mateusz Matejko\Downloads\avr-stl-1.1.1\avr-stl\include\sequence_concepts.h">
+      <Filter>Header Files\STL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Users\Mateusz Matejko\Downloads\avr-stl-1.1.1\avr-stl\include\stl_algo.h">
+      <Filter>Header Files\STL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Users\Mateusz Matejko\Downloads\avr-stl-1.1.1\avr-stl\include\stl_algobase.h">
+      <Filter>Header Files\STL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Users\Mateusz Matejko\Downloads\avr-stl-1.1.1\avr-stl\include\stl_alloc.h">
+      <Filter>Header Files\STL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Users\Mateusz Matejko\Downloads\avr-stl-1.1.1\avr-stl\include\stl_bvector.h">
+      <Filter>Header Files\STL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Users\Mateusz Matejko\Downloads\avr-stl-1.1.1\avr-stl\include\stl_config.h">
+      <Filter>Header Files\STL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Users\Mateusz Matejko\Downloads\avr-stl-1.1.1\avr-stl\include\stl_construct.h">
+      <Filter>Header Files\STL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Users\Mateusz Matejko\Downloads\avr-stl-1.1.1\avr-stl\include\stl_ctraits_fns.h">
+      <Filter>Header Files\STL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Users\Mateusz Matejko\Downloads\avr-stl-1.1.1\avr-stl\include\stl_deque.h">
+      <Filter>Header Files\STL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Users\Mateusz Matejko\Downloads\avr-stl-1.1.1\avr-stl\include\stl_function.h">
+      <Filter>Header Files\STL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Users\Mateusz Matejko\Downloads\avr-stl-1.1.1\avr-stl\include\stl_hash_fun.h">
+      <Filter>Header Files\STL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Users\Mateusz Matejko\Downloads\avr-stl-1.1.1\avr-stl\include\stl_hash_map.h">
+      <Filter>Header Files\STL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Users\Mateusz Matejko\Downloads\avr-stl-1.1.1\avr-stl\include\stl_hash_set.h">
+      <Filter>Header Files\STL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Users\Mateusz Matejko\Downloads\avr-stl-1.1.1\avr-stl\include\stl_hashtable.h">
+      <Filter>Header Files\STL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Users\Mateusz Matejko\Downloads\avr-stl-1.1.1\avr-stl\include\stl_heap.h">
+      <Filter>Header Files\STL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Users\Mateusz Matejko\Downloads\avr-stl-1.1.1\avr-stl\include\stl_iterator.h">
+      <Filter>Header Files\STL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Users\Mateusz Matejko\Downloads\avr-stl-1.1.1\avr-stl\include\stl_iterator_base.h">
+      <Filter>Header Files\STL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Users\Mateusz Matejko\Downloads\avr-stl-1.1.1\avr-stl\include\stl_list.h">
+      <Filter>Header Files\STL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Users\Mateusz Matejko\Downloads\avr-stl-1.1.1\avr-stl\include\stl_map.h">
+      <Filter>Header Files\STL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Users\Mateusz Matejko\Downloads\avr-stl-1.1.1\avr-stl\include\stl_multimap.h">
+      <Filter>Header Files\STL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Users\Mateusz Matejko\Downloads\avr-stl-1.1.1\avr-stl\include\stl_multiset.h">
+      <Filter>Header Files\STL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Users\Mateusz Matejko\Downloads\avr-stl-1.1.1\avr-stl\include\stl_numeric.h">
+      <Filter>Header Files\STL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Users\Mateusz Matejko\Downloads\avr-stl-1.1.1\avr-stl\include\stl_pair.h">
+      <Filter>Header Files\STL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Users\Mateusz Matejko\Downloads\avr-stl-1.1.1\avr-stl\include\stl_queue.h">
+      <Filter>Header Files\STL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Users\Mateusz Matejko\Downloads\avr-stl-1.1.1\avr-stl\include\stl_range_errors.h">
+      <Filter>Header Files\STL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Users\Mateusz Matejko\Downloads\avr-stl-1.1.1\avr-stl\include\stl_raw_storage_iter.h">
+      <Filter>Header Files\STL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Users\Mateusz Matejko\Downloads\avr-stl-1.1.1\avr-stl\include\stl_relops.h">
+      <Filter>Header Files\STL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Users\Mateusz Matejko\Downloads\avr-stl-1.1.1\avr-stl\include\stl_set.h">
+      <Filter>Header Files\STL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Users\Mateusz Matejko\Downloads\avr-stl-1.1.1\avr-stl\include\stl_slist.h">
+      <Filter>Header Files\STL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Users\Mateusz Matejko\Downloads\avr-stl-1.1.1\avr-stl\include\stl_stack.h">
+      <Filter>Header Files\STL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Users\Mateusz Matejko\Downloads\avr-stl-1.1.1\avr-stl\include\stl_string_fwd.h">
+      <Filter>Header Files\STL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Users\Mateusz Matejko\Downloads\avr-stl-1.1.1\avr-stl\include\stl_tempbuf.h">
+      <Filter>Header Files\STL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Users\Mateusz Matejko\Downloads\avr-stl-1.1.1\avr-stl\include\stl_tree.h">
+      <Filter>Header Files\STL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Users\Mateusz Matejko\Downloads\avr-stl-1.1.1\avr-stl\include\stl_uninitialized.h">
+      <Filter>Header Files\STL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Users\Mateusz Matejko\Downloads\avr-stl-1.1.1\avr-stl\include\stl_vector.h">
+      <Filter>Header Files\STL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Users\Mateusz Matejko\Downloads\avr-stl-1.1.1\avr-stl\include\type_traits.h">
+      <Filter>Header Files\STL</Filter>
+    </ClInclude>
+    <ClInclude Include="MOSFETController.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CurrentSensor.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="TemperatureSensor.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="VoltageSensor.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Gyroscope.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="SerialConnection.cpp">
       <Filter>Source Files\SerialConnection</Filter>
     </ClCompile>
     <ClCompile Include="CoreService.cpp">
       <Filter>Source Files\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Users\Mateusz Matejko\Downloads\avr-stl-1.1.1\avr-stl\include\pnew.cpp">
+      <Filter>Header Files\STL</Filter>
+    </ClCompile>
+    <ClCompile Include="MOSFETController.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Cell.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CurrentSensor.cpp">
+      <Filter>Source Files\Sensors</Filter>
+    </ClCompile>
+    <ClCompile Include="Gyroscope.cpp">
+      <Filter>Source Files\Sensors</Filter>
+    </ClCompile>
+    <ClCompile Include="TemperatureSensor.cpp">
+      <Filter>Source Files\Sensors</Filter>
+    </ClCompile>
+    <ClCompile Include="VoltageSensor.cpp">
+      <Filter>Source Files\Sensors</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
