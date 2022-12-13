@@ -1,11 +1,12 @@
 #pragma once
 
-class IVoltageSensor
+class IVoltageSensor : public ISensor
 {
 	public:
+		void Init(int pin);
 
 		/// <summary>
-		/// Measures voltage on th egiven PIN
+		/// Measures voltage on the given PIN
 		/// </summary>
-		void Mesaure();
+		//void Mesaure();
 };

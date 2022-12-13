@@ -4,6 +4,9 @@
 #include <vector>
 #include <Config.h>
 #include "PINS.h"
+#include <VoltageSensor.h>
+#include <CurrentSensor.h>
+#include <TemperatureSensor.h>
 
 //std::list<Cell> _cells;
 //std::list<Cell>::iterator _iterator;
@@ -28,9 +31,13 @@ void CoreService::Start(int cellNumber)
 
 void CoreService::Init(int cellNumber, int chargePins[], int voltagePins[], int balancePins[])
 {
+	VoltageSensor voltageSensor;
+	CurrentSensor currentSensor;
+	TemperatureSensor temperatureSensor;
+
 	for (int i = 0; i < cellNumber; i++)
 	{
-		Cell cell;
+		Cell cell(voltageSensor, currentSensor, temperatureSensor);
 		cell.Init(chargePins[i], voltagePins[i], balancePins[i]);
 		_cells.push_back(cell);
 	}

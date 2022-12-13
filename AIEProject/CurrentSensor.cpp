@@ -1,6 +1,6 @@
 #include "CurrentSensor.h"
 
-void CurrentSensor::Measure()
+float CurrentSensor::Measure()
 {
 
 }

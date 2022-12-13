@@ -1,6 +1,8 @@
 #pragma once
 
-class VoltageSensor
+#include <IVoltageSensor.h>
+
+class VoltageSensor : public IVoltageSensor
 {
 private:
 	int _pin;

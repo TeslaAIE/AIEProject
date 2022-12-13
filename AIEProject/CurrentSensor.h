@@ -4,5 +4,5 @@
 class CurrentSensor : public ICurrentSensor
 {
 	public:
-		void Measure();
+		float Measure();
 };

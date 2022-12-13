@@ -24,11 +24,11 @@ void MOSFETController::Open()
 {
 	if (!_isDepletionMode)
 	{
-		digitalWrite(_pin, LOW);
+		digitalWrite(_pin, HIGH);
 	}
 	else
 	{
-		digitalWrite(_pin, HIGH);
+		digitalWrite(_pin, LOW);
 	}
 }
 
@@ -36,10 +36,10 @@ void MOSFETController::Close()
 {
 	if (!_isDepletionMode)
 	{
-		digitalWrite(_pin, HIGH);
+		digitalWrite(_pin, LOW);
 	}
 	else
 	{
-		digitalWrite(_pin, LOW);
+		digitalWrite(_pin, HIGH);
 	}
 }

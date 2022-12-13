@@ -158,10 +158,13 @@
     <ClInclude Include="CurrentSensor.h" />
     <ClInclude Include="Gyroscope.h" />
     <ClInclude Include="ICurrentSensor.h" />
+    <ClInclude Include="ISensor.h" />
+    <ClInclude Include="ITemperatureSensor.h" />
     <ClInclude Include="IVoltageSensor.h" />
     <ClInclude Include="MOSFETController.h" />
     <ClInclude Include="PINS.h" />
     <ClInclude Include="SerialConnection.h" />
+    <ClInclude Include="TemperatureControl.h" />
     <ClInclude Include="TemperatureSensor.h" />
     <ClInclude Include="VoltageSensor.h" />
     <ClInclude Include="__vm\.AIEProject.vsarduino.h" />
@@ -174,6 +177,7 @@
     <ClCompile Include="Gyroscope.cpp" />
     <ClCompile Include="MOSFETController.cpp" />
     <ClCompile Include="SerialConnection.cpp" />
+    <ClCompile Include="TemperatureControl.cpp" />
     <ClCompile Include="TemperatureSensor.cpp" />
     <ClCompile Include="VoltageSensor.cpp" />
   </ItemGroup>

@@ -40,6 +40,39 @@
     <Filter Include="Header Files\STL">
       <UniqueIdentifier>{3e8bd92c-0fd8-4b97-bc29-f9a16a96979d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Sensors\VoltageSensor">
+      <UniqueIdentifier>{24d6a831-7d5e-45c2-a3a1-e3f70d03b0b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Sensors\CurrentSensor">
+      <UniqueIdentifier>{7f1282bd-570a-4c34-8562-31788301b995}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Sensors\TemperatureSensor">
+      <UniqueIdentifier>{e997488f-e857-4b9e-9878-89249f3794fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Logic\TemperatureControl">
+      <UniqueIdentifier>{626dc99c-5c69-4964-a919-27abe7a1f228}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Logic\MOSFETController">
+      <UniqueIdentifier>{52c8e802-5d5e-483b-b5a5-ecf6fea44389}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Sensors\VoltageSensor">
+      <UniqueIdentifier>{c457bc71-cc83-4fed-a0ba-4f5ea9d1bc03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Sensors\CurrentSensor">
+      <UniqueIdentifier>{71dd9eff-90f3-4285-944b-b91bd093aa14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Sensors\TemperatureSensor">
+      <UniqueIdentifier>{39e64fe4-45fe-4201-966e-0f38f452b4ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Logic\TemperatureControl">
+      <UniqueIdentifier>{6b4e3b7d-eaae-48e5-96a3-21bbf06faf3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Logic\MOSFETController">
+      <UniqueIdentifier>{298dede2-52c2-4540-bdaa-30d1c446c723}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DataStructures">
+      <UniqueIdentifier>{3cd33939-40cf-4f72-a19b-24006325f003}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="AIEProject.ino" />
@@ -57,22 +90,7 @@
     <ClInclude Include="CoreService.h">
       <Filter>Header Files\Logic</Filter>
     </ClInclude>
-    <ClInclude Include="CurrentSensor.h">
-      <Filter>Header Files\Sensors</Filter>
-    </ClInclude>
     <ClInclude Include="Gyroscope.h">
-      <Filter>Header Files\Sensors</Filter>
-    </ClInclude>
-    <ClInclude Include="ICurrentSensor.h">
-      <Filter>Header Files\Sensors</Filter>
-    </ClInclude>
-    <ClInclude Include="IVoltageSensor.h">
-      <Filter>Header Files\Sensors</Filter>
-    </ClInclude>
-    <ClInclude Include="TemperatureSensor.h">
-      <Filter>Header Files\Sensors</Filter>
-    </ClInclude>
-    <ClInclude Include="VoltageSensor.h">
       <Filter>Header Files\Sensors</Filter>
     </ClInclude>
     <ClInclude Include="Config.h">
@@ -204,8 +222,32 @@
     <ClInclude Include="..\..\..\..\Users\Mateusz Matejko\Downloads\avr-stl-1.1.1\avr-stl\include\type_traits.h">
       <Filter>Header Files\STL</Filter>
     </ClInclude>
+    <ClInclude Include="IVoltageSensor.h">
+      <Filter>Header Files\Sensors\VoltageSensor</Filter>
+    </ClInclude>
+    <ClInclude Include="VoltageSensor.h">
+      <Filter>Header Files\Sensors\VoltageSensor</Filter>
+    </ClInclude>
+    <ClInclude Include="CurrentSensor.h">
+      <Filter>Header Files\Sensors\CurrentSensor</Filter>
+    </ClInclude>
+    <ClInclude Include="ICurrentSensor.h">
+      <Filter>Header Files\Sensors\CurrentSensor</Filter>
+    </ClInclude>
+    <ClInclude Include="TemperatureSensor.h">
+      <Filter>Header Files\Sensors\TemperatureSensor</Filter>
+    </ClInclude>
+    <ClInclude Include="ITemperatureSensor.h">
+      <Filter>Header Files\Sensors\TemperatureSensor</Filter>
+    </ClInclude>
+    <ClInclude Include="ISensor.h">
+      <Filter>Header Files\Sensors</Filter>
+    </ClInclude>
+    <ClInclude Include="TemperatureControl.h">
+      <Filter>Header Files\Logic\TemperatureControl</Filter>
+    </ClInclude>
     <ClInclude Include="MOSFETController.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Logic\MOSFETController</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -218,23 +260,26 @@
     <ClCompile Include="..\..\..\..\Users\Mateusz Matejko\Downloads\avr-stl-1.1.1\avr-stl\include\pnew.cpp">
       <Filter>Header Files\STL</Filter>
     </ClCompile>
-    <ClCompile Include="MOSFETController.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Cell.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="CurrentSensor.cpp">
-      <Filter>Source Files\Sensors</Filter>
-    </ClCompile>
     <ClCompile Include="Gyroscope.cpp">
       <Filter>Source Files\Sensors</Filter>
     </ClCompile>
-    <ClCompile Include="TemperatureSensor.cpp">
-      <Filter>Source Files\Sensors</Filter>
-    </ClCompile>
     <ClCompile Include="VoltageSensor.cpp">
-      <Filter>Source Files\Sensors</Filter>
+      <Filter>Source Files\Sensors\VoltageSensor</Filter>
+    </ClCompile>
+    <ClCompile Include="CurrentSensor.cpp">
+      <Filter>Source Files\Sensors\CurrentSensor</Filter>
+    </ClCompile>
+    <ClCompile Include="TemperatureSensor.cpp">
+      <Filter>Source Files\Sensors\TemperatureSensor</Filter>
+    </ClCompile>
+    <ClCompile Include="TemperatureControl.cpp">
+      <Filter>Source Files\Logic\TemperatureControl</Filter>
+    </ClCompile>
+    <ClCompile Include="MOSFETController.cpp">
+      <Filter>Source Files\Logic\MOSFETController</Filter>
+    </ClCompile>
+    <ClCompile Include="Cell.cpp">
+      <Filter>Source Files\DataStructures</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
