@@ -73,6 +73,15 @@
     <Filter Include="Source Files\DataStructures">
       <UniqueIdentifier>{3cd33939-40cf-4f72-a19b-24006325f003}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Logic\Services">
+      <UniqueIdentifier>{f00cac98-e692-47c9-880b-ceb96deaf896}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Logic\Services">
+      <UniqueIdentifier>{49cd6b60-af3f-4ae1-a771-eb0a3f65ef88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Config">
+      <UniqueIdentifier>{87ae8808-c479-4167-b193-6f567e313f77}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="AIEProject.ino" />
@@ -249,6 +258,27 @@
     <ClInclude Include="MOSFETController.h">
       <Filter>Header Files\Logic\MOSFETController</Filter>
     </ClInclude>
+    <ClInclude Include="ChargingService.h">
+      <Filter>Header Files\Logic\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="IoCContainer.h">
+      <Filter>Header Files\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="IChargingService.h">
+      <Filter>Header Files\Logic\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="IService.h">
+      <Filter>Header Files\Logic\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="BalancingService.h">
+      <Filter>Header Files\Logic\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="IBalancingService.h">
+      <Filter>Header Files\Logic\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SerialConnection.cpp">
@@ -280,6 +310,24 @@
     </ClCompile>
     <ClCompile Include="Cell.cpp">
       <Filter>Source Files\DataStructures</Filter>
+    </ClCompile>
+    <ClCompile Include="ChargingService.cpp">
+      <Filter>Source Files\Logic\Services</Filter>
+    </ClCompile>
+    <ClCompile Include="IoCContainer.cpp">
+      <Filter>Source Files\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="BalancingService.cpp">
+      <Filter>Source Files\Logic\Services</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IBalancingService.cpp">
+      <Filter>Source Files\Logic\Services</Filter>
+    </ClCompile>
+    <ClCompile Include="IChargingService.cpp">
+      <Filter>Source Files\Logic\Services</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

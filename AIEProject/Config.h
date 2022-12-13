@@ -3,9 +3,9 @@
 class Config
 {
 	public:
-		static float VOLTAGE_CHARGED;
-		static int CELL_NUMBER;
+		static const float VOLTAGE_CHARGED;
+		static const int CELL_NUMBER;
 };
 
-float Config::VOLTAGE_CHARGED = 4.2;
-int Config::CELL_NUMBER = 4;
+static const float VOLTAGE_CHARGED = 4.2f;
+static const int CELL_NUMBER = 4;

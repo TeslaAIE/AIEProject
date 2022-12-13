@@ -43,57 +43,9 @@ void CoreService::Init(int cellNumber, int chargePins[], int voltagePins[], int 
 	}
 }
 
-void CoreService::StartCharging()
-{
-	for (_iterator = _cells.begin(); _iterator != _cells.end(); ++_iterator)
-	{
-		Cell cell = *_iterator;
-
-		if (cell.Voltage < 4.2)
-		{
-			cell.ChargeMOSFET.Open();
-		}
-
-		Serial.println(cell.Voltage);
-	}
-}
-
-void CoreService::StopCharging()
-{
-	for (_iterator = _cells.begin(); _iterator != _cells.end(); ++_iterator)
-	{
-		Cell cell = *_iterator;
-
-		cell.ChargeMOSFET.Close();
-
-		Serial.println(cell.Voltage);
-	}
-}
-
-void CoreService::CheckCharging()
-{
-	for (_iterator = _cells.begin(); _iterator != _cells.end(); ++_iterator)
-	{
-		Cell cell = *_iterator;
-
-		if (cell.Voltage >= 4.2)
-		{
-			cell.ChargeMOSFET.Close();
-		}
-
-		Serial.println(cell.Voltage);
-	}
-}
-
 Cell GetListItem(std::list<Cell> list, int index)
 {
-	std::list<Cell>::iterator iterator;
-	for (int i = 0; i < index; ++i)
-	{
-		++iterator;
-	}
-
-	return *iterator;
+	
 }
 
 void CoreService::StartLoop()

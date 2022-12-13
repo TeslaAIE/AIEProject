@@ -8,6 +8,6 @@ private:
 	int _pin;
 
 public:
-	void Init(int pin);
+	void Init(const int pin);
 	float Measure();
 };

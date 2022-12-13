@@ -152,13 +152,19 @@
     <ClInclude Include="..\..\..\..\Users\Mateusz Matejko\Downloads\avr-stl-1.1.1\avr-stl\include\stl_uninitialized.h" />
     <ClInclude Include="..\..\..\..\Users\Mateusz Matejko\Downloads\avr-stl-1.1.1\avr-stl\include\stl_vector.h" />
     <ClInclude Include="..\..\..\..\Users\Mateusz Matejko\Downloads\avr-stl-1.1.1\avr-stl\include\type_traits.h" />
+    <ClInclude Include="BalancingService.h" />
     <ClInclude Include="Cell.h" />
+    <ClInclude Include="ChargingService.h" />
     <ClInclude Include="Config.h" />
     <ClInclude Include="CoreService.h" />
     <ClInclude Include="CurrentSensor.h" />
     <ClInclude Include="Gyroscope.h" />
+    <ClInclude Include="IBalancingService.h" />
+    <ClInclude Include="IChargingService.h" />
     <ClInclude Include="ICurrentSensor.h" />
+    <ClInclude Include="IoCContainer.h" />
     <ClInclude Include="ISensor.h" />
+    <ClInclude Include="IService.h" />
     <ClInclude Include="ITemperatureSensor.h" />
     <ClInclude Include="IVoltageSensor.h" />
     <ClInclude Include="MOSFETController.h" />
@@ -166,19 +172,26 @@
     <ClInclude Include="SerialConnection.h" />
     <ClInclude Include="TemperatureControl.h" />
     <ClInclude Include="TemperatureSensor.h" />
+    <ClInclude Include="Utilities.h" />
     <ClInclude Include="VoltageSensor.h" />
     <ClInclude Include="__vm\.AIEProject.vsarduino.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\Users\Mateusz Matejko\Downloads\avr-stl-1.1.1\avr-stl\include\pnew.cpp" />
+    <ClCompile Include="BalancingService.cpp" />
     <ClCompile Include="Cell.cpp" />
+    <ClCompile Include="ChargingService.cpp" />
     <ClCompile Include="CoreService.cpp" />
     <ClCompile Include="CurrentSensor.cpp" />
     <ClCompile Include="Gyroscope.cpp" />
+    <ClCompile Include="IBalancingService.cpp" />
+    <ClCompile Include="IChargingService.cpp" />
+    <ClCompile Include="IoCContainer.cpp" />
     <ClCompile Include="MOSFETController.cpp" />
     <ClCompile Include="SerialConnection.cpp" />
     <ClCompile Include="TemperatureControl.cpp" />
     <ClCompile Include="TemperatureSensor.cpp" />
+    <ClCompile Include="Utilities.cpp" />
     <ClCompile Include="VoltageSensor.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

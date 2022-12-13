@@ -19,6 +19,7 @@ class Cell
 		int SOH;
 		float Temperature;
 		void UpdateVoltage();
+		void UpdateTemperature();
 		void Init(int chargePin, int voltagePin, int balancePin);
 		MOSFETController ChargeMOSFET;
 		MOSFETController BalanceMOSFET;

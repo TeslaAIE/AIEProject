@@ -1,12 +1,14 @@
 #pragma once
 
+#include <ISensor.h>
+
 class IVoltageSensor : public ISensor
 {
 	public:
-		void Init(int pin);
+		void Init(const int pin);
 
 		/// <summary>
 		/// Measures voltage on the given PIN
 		/// </summary>
-		//void Mesaure();
+		//virtual void Mesaure() = 0;
 };
