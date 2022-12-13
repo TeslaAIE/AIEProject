@@ -8,6 +8,7 @@ class BalancingService : IBalancingService
 {
 private:
 	list<Cell> _cells;
+	list<Cell>::iterator _iterator;
 public:
 	BalancingService(list<Cell> &cells);
 
@@ -17,9 +18,4 @@ public:
 
 	// Inherited via IBalancingService
 	virtual void StartBalancing() override;
-
-
-	virtual void Init() override;
-
-
 };

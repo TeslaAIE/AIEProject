@@ -1,6 +1,8 @@
 #pragma once
 
-class MOSFETController
+#include "IMOSFETController.h"
+
+class MOSFETController : IMOSFETController
 {
 	private:
 		int _pin;

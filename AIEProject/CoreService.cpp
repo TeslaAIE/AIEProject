@@ -7,6 +7,7 @@
 #include <VoltageSensor.h>
 #include <CurrentSensor.h>
 #include <TemperatureSensor.h>
+#include <IoCContainer.h>
 
 //std::list<Cell> _cells;
 //std::list<Cell>::iterator _iterator;
@@ -31,13 +32,9 @@ void CoreService::Start(int cellNumber)
 
 void CoreService::Init(int cellNumber, int chargePins[], int voltagePins[], int balancePins[])
 {
-	VoltageSensor voltageSensor;
-	CurrentSensor currentSensor;
-	TemperatureSensor temperatureSensor;
-
 	for (int i = 0; i < cellNumber; i++)
 	{
-		Cell cell(voltageSensor, currentSensor, temperatureSensor);
+		Cell cell(IoCContainer::VoltageSensorObject, IoCContainer::CurrentSensorObject, IoCContainer::TemperatureSensorObject);
 		cell.Init(chargePins[i], voltagePins[i], balancePins[i]);
 		_cells.push_back(cell);
 	}
@@ -65,35 +62,6 @@ void CoreService::UpdateVoltage()
 		Cell cell = *_iterator;
 
 		cell.UpdateVoltage();
-
-		Serial.println(cell.Voltage);
-	}
-}
-
-void CoreService::Balance(int balancePins[])
-{
-	for (int i = 0; i < _cells.size() - 1; ++i)
-	{
-		if (GetListItem(_cells, i).Voltage > GetListItem(_cells, i + 1).Voltage)
-		{
-			GetListItem(_cells, i).BalanceMOSFET.Open();
-		}
-
-		if (GetListItem(_cells, i).Voltage < GetListItem(_cells, i + 1).Voltage)
-		{
-			GetListItem(_cells, i).BalanceMOSFET.Open();
-		}
-
-		if (abs( GetListItem(_cells, i).Voltage - GetListItem(_cells, i + 1).Voltage) < 0.02)
-		{
-			GetListItem(_cells, i).BalanceMOSFET.Close();
-		}
-	}
-
-	for (_iterator = _cells.begin(); _iterator != _cells.end(); ++_iterator)
-	{
-		Cell cell = *_iterator;
-
 
 		Serial.println(cell.Voltage);
 	}

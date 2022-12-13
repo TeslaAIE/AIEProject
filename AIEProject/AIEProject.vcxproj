@@ -162,9 +162,11 @@
     <ClInclude Include="IBalancingService.h" />
     <ClInclude Include="IChargingService.h" />
     <ClInclude Include="ICurrentSensor.h" />
+    <ClInclude Include="IMOSFETController.h" />
     <ClInclude Include="IoCContainer.h" />
     <ClInclude Include="ISensor.h" />
     <ClInclude Include="IService.h" />
+    <ClInclude Include="ITemperatureControl.h" />
     <ClInclude Include="ITemperatureSensor.h" />
     <ClInclude Include="IVoltageSensor.h" />
     <ClInclude Include="MOSFETController.h" />

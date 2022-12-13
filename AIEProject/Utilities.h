@@ -8,5 +8,5 @@ class Utilities
 private:
 	list<Cell>::iterator _iterator;
 public:
-	Cell GetListItem(list<Cell> list, int index);
+	static Cell GetListItem(list<Cell> list, int index);
 };

@@ -15,19 +15,19 @@ void BalancingService::StartBalancing()
 {
 	for (int i = 0; i < _cells.size() - 1; ++i)
 	{
-		if (GetListItem(_cells, i).Voltage > GetListItem(_cells, i + 1).Voltage)
+		if (Utilities::GetListItem(_cells, i).Voltage > Utilities::GetListItem(_cells, i + 1).Voltage)
 		{
-			GetListItem(_cells, i).BalanceMOSFET.Open();
+			Utilities::GetListItem(_cells, i).BalanceMOSFET.Open();
 		}
 
-		if (GetListItem(_cells, i).Voltage < GetListItem(_cells, i + 1).Voltage)
+		if (Utilities::GetListItem(_cells, i).Voltage < Utilities::GetListItem(_cells, i + 1).Voltage)
 		{
-			GetListItem(_cells, i).BalanceMOSFET.Open();
+			Utilities::GetListItem(_cells, i).BalanceMOSFET.Open();
 		}
 
-		if (abs(GetListItem(_cells, i).Voltage - GetListItem(_cells, i + 1).Voltage) < 0.02)
+		if (abs(Utilities::GetListItem(_cells, i).Voltage - Utilities::GetListItem(_cells, i + 1).Voltage) < 0.02)
 		{
-			GetListItem(_cells, i).BalanceMOSFET.Close();
+			Utilities::GetListItem(_cells, i).BalanceMOSFET.Close();
 		}
 	}
 

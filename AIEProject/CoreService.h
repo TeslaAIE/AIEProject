@@ -7,6 +7,8 @@ static class CoreService
 	private:
 		//void StartLoop();
 		bool _isRunning;
+		std::list<Cell> _cells;
+		std::list<Cell>::iterator _iterator;
 
 		
 	public:
@@ -15,11 +17,4 @@ static class CoreService
 		void Init(int cellNumber, int chargePins[], int voltagePins[], int balancePins[]);
 		void StartLoop();
 		void UpdateVoltage();
-		void StartCharging();
-		void StopCharging();
-		void CheckCharging();
-		void Balance(int balancePins[]);
-
-		std::list<Cell> _cells;
-		std::list<Cell>::iterator _iterator;
 };
